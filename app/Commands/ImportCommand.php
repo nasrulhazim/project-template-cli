@@ -28,19 +28,17 @@ class ImportCommand extends Command
      */
     public function handle()
     {
-        if(! file_exists($this->argument('path'))) {
+        if (! file_exists($this->argument('path'))) {
             $this->error('File not found');
+
             return;
         }
 
-        $this->info('Importing data from ' . $this->argument('path') . ' completed');
+        $this->info('Importing data from '.$this->argument('path').' completed');
     }
 
     /**
      * Define the command's schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
      */
     public function schedule(Schedule $schedule): void
     {
