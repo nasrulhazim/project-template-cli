@@ -11,8 +11,8 @@
     },
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Nasrul Hazim",
+            "email": "nasrul@cleanniquecoders.com"
         }
     ],
     "require": {
@@ -21,7 +21,7 @@
         "nunomaduro/termwind": "^1.15.1"
     },
     "require-dev": {
-        "laravel/pint": "^1.8",
+        "laravel/pint": "^1.11",
         "mockery/mockery": "^1.5.1",
         "pestphp/pest": "^2.5"
     },
@@ -44,6 +44,9 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
+    },
+    "scripts": {
+        "format": "@php vendor/bin/pint"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
